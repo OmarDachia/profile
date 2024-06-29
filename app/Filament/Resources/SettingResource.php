@@ -24,46 +24,37 @@ class SettingResource extends Resource
         return $form
             ->schema([
                 Forms\Components\TextInput::make('username')
-                    ->maxLength(255)
-                    ->default(null),
+                    ->maxLength(255),
                 Forms\Components\TextInput::make('name')
-                    ->maxLength(255)
-                    ->default(null),
+                    ->maxLength(255),
                 Forms\Components\TextInput::make('title')
-                    ->maxLength(255)
-                    ->default(null),
+                    ->maxLength(255),
                 Forms\Components\TextInput::make('linkedin_url')
                     ->maxLength(255)
-                    ->default(null),
+                    ->url(),
                 Forms\Components\TextInput::make('github_url')
                     ->maxLength(255)
-                    ->default(null),
+                    ->url(),
                 Forms\Components\TextInput::make('insta_url')
                     ->maxLength(255)
-                    ->default(null),
-                Forms\Components\TextInput::make('hero_gift')
-                    ->maxLength(255)
-                    ->default(null),
+                    ->url(),
+                Forms\Components\FileUpload::make('hero_gift')
+                    ->image()
+                    ->columnSpan(2),
                 Forms\Components\TextInput::make('email')
                     ->email()
-                    ->maxLength(255)
-                    ->default(null),
+                    ->maxLength(255),
                 Forms\Components\TextInput::make('phone')
                     ->tel()
-                    ->maxLength(255)
-                    ->default(null),
+                    ->maxLength(255),
                 Forms\Components\TextInput::make('pronouns')
-                    ->maxLength(255)
-                    ->default(null),
+                    ->maxLength(255),
                 Forms\Components\TextInput::make('location')
-                    ->maxLength(255)
-                    ->default(null),
+                    ->maxLength(255),
                 Forms\Components\TextInput::make('languages')
-                    ->maxLength(255)
-                    ->default(null),
+                    ->maxLength(255),
                 Forms\Components\TextInput::make('pit_animal')
-                    ->maxLength(255)
-                    ->default(null),
+                    ->maxLength(255),
             ]);
     }
 
