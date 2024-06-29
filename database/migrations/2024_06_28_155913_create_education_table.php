@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('education', function (Blueprint $table) {
             $table->id();
             // $table->string("have_education")->nullable();
-            $table->string("education_degree")->default(true);
+            $table->string("education_degree");
             $table->string("education_location")->nullable();
             $table->longText("education_achievements")->nullable();
             $table->timestamps();

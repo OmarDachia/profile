@@ -109,6 +109,9 @@ h4, h5 {
     margin-top: 25px;
 }
 
+#c-info{
+    background-color: #1D263B;
+}
 .card-info p {
     margin-top: 0.35em;
 }

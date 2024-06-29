@@ -18,7 +18,7 @@ class GeneralController extends Controller
         return view("projects");
     }
 
-    public function contact(){
-        return view("contact");
+    public function photos(){
+        return view("photos");
     }
 }

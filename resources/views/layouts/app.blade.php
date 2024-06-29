@@ -41,6 +41,7 @@
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
 
         <link rel="stylesheet" href="{{ asset('css/main.css') }}" type="text/css">
+        <link rel="stylesheet" href="{{ asset('css/about.css') }}" type="text/css">
         <link rel="stylesheet" href="{{ asset('css/header.css') }}" type="text/css">
         <link rel="stylesheet" href="{{ asset('css/home.css') }}" type="text/css">
         <link rel="stylesheet" href="{{ asset('css/projects.css') }}" type="text/css">
@@ -53,9 +54,9 @@
             <nav class="nav">
                 <div class="toggle"><i class="fas fa-bars"></i></div>
                 <ul class="nav-menu">
-                    <li class="nav-item"><a href="/about">About</a></li>
-                    <li class="nav-item"><a href="/projects">Projects</a></li>
-                    <li class="nav-item"><a href="https://anniedotexe.mypixieset.com/">Photos</a>
+                    <li class="nav-item"><a href="{{ route("about")}}">About</a></li>
+                    <li class="nav-item"><a href="{{ route("projects")}}">Projects</a></li>
+                    <li class="nav-item"><a href="{{ route("photos")}}">Photos</a>
                     </li>
                 </ul>
             </nav>
