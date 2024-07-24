@@ -24,6 +24,13 @@ class Setting extends Model
         "languages",
         "pit_animal",
     ];
+
+    protected function casts(): array
+    {
+        return [
+            'languages' => 'array',
+        ];
+    }
 }
 
 
